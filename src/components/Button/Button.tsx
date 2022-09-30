@@ -6,6 +6,7 @@ import "./Button.css";
 import "../../../src/styles/tailwind.css";
 
 type TButtonVariant =
+  | "link"
   | "primary"
   | "success"
   | "danger"
@@ -19,6 +20,7 @@ type TButtonType = "button" | "submit" | "reset";
 
 export interface ButtonProps {
   label: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
   variant?: TButtonVariant;
   size?: TButtonSize;
   type?: TButtonType;
@@ -36,9 +38,11 @@ const Button = (props: ButtonProps) => {
     rounded,
     fullWidth,
     className,
+    onClick,
   } = props;
 
   const mapVariant = {
+    link: "btn-link",
     primary: "btn-primary",
     success: "btn-success",
     danger: "btn-danger",
@@ -57,6 +61,7 @@ const Button = (props: ButtonProps) => {
         rounded ? "rounded-full" : "rounded",
         fullWidth ? "w-full" : ""
       )}
+      onClick={onClick}
     >
       {label}
     </button>

@@ -7,7 +7,6 @@ import { terser } from "rollup-plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import del from "rollup-plugin-delete";
 import postcss from "rollup-plugin-postcss";
-// import scss from "rollup-plugin-scss";
 
 const pkg = require("./package.json");
 
@@ -39,15 +38,6 @@ export default [
         },
       }),
       del({ targets: ["dist/*"] }),
-      // scss({
-      //   extract: false,
-      //   modules: true, // keep css in module
-      //   use: ["sass"],
-      //   include: ["./**/*.css", "./**/*.scss", "./**/*.sass"],
-      //   output: "dist/css/index.css",
-      //   failOnError: true,
-      //   outputStyle: "compressed",
-      // }),
       terser(),
     ],
   },

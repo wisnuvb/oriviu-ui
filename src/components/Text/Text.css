@@ -1,3 +1,12 @@
 .heading-1 {
   @apply text-2xl;
 }
+.heading-2 {
+  @apply text-xl;
+}
+.heading-3 {
+  @apply text-lg font-bold font-Nunito;
+}
+.span {
+  @apply text-xs font-normal font-Nunito;
+}

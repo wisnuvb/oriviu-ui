@@ -1,3 +1,6 @@
+.btn-link {
+  @apply text-primary;
+}
 .btn-primary {
   @apply bg-primary text-white;
 }

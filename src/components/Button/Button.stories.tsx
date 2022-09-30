@@ -13,7 +13,7 @@ export default {
 
 export const Default: Story = (args) => (
   <div className="w-full">
-    <Button label={args.label} {...args} />
+    <Button label={args.label} onClick={() => {}} {...args} />
   </div>
 );
 

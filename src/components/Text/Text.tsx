@@ -14,6 +14,8 @@ import {
 } from "../../shared";
 import { classNames } from "../../shared";
 
+import "./Text.css";
+
 type TVariant =
   | typeof H1
   | typeof H2
@@ -75,7 +77,9 @@ const Text = ({ variant = "p", size, text, className }: IText) => {
   const variantClassName =
     VARIANT_CLASSES[variant] && VARIANT_CLASSES[variant].includes("heading")
       ? VARIANT_CLASSES[variant]
-      : `${VARIANTS[variant]}-${size && VARIANT_SIZES[size]}`;
+      : size
+      ? `${VARIANTS[variant]}-${size && VARIANT_SIZES[size]}`
+      : VARIANT_CLASSES[variant];
 
   // const variantClassName = VARIANT_CLASSES[variant];
 

@@ -1,0 +1,18 @@
+.card {
+  @apply rounded-2xl p-4;
+}
+.card-primary {
+  @apply bg-primary text-white;
+}
+.card-success {
+  @apply bg-success text-white;
+}
+.card-danger {
+  @apply bg-danger text-white;
+}
+.card-neutral {
+  @apply bg-white text-textHeading1;
+}
+.card-header {
+  @apply flex gap-2 items-center justify-between;
+}
