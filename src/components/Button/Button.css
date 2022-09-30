@@ -1,0 +1,30 @@
+.btn-primary {
+  @apply bg-primary text-white;
+}
+.btn-success {
+  @apply bg-success3 text-white;
+}
+.btn-danger {
+  @apply bg-danger text-white;
+}
+.btn-outline-primary {
+  @apply text-primary border border-primary bg-white;
+}
+.btn-outline-success {
+  @apply text-success3 border border-success3 bg-white;
+}
+.btn-outline-danger {
+  @apply text-danger border border-danger bg-white;
+}
+.sm {
+  @apply text-xs py-2 px-3 font-Nunito font-medium leading-none;
+}
+.md {
+  @apply text-sm py-2 px-3 font-Nunito font-medium leading-none;
+}
+.lg {
+  @apply text-lg py-2 px-3 font-Nunito font-medium leading-none;
+}
+.xl {
+  @apply text-xl py-2 px-3 font-Nunito font-medium leading-none;
+}

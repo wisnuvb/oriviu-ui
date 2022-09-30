@@ -1,0 +1,12 @@
+.avatar-xs {
+  @apply w-10 h-10;
+}
+.avatar-sm {
+  @apply w-14 h-14;
+}
+.avatar-md {
+  @apply w-20 h-20;
+}
+.avatar-lg {
+  @apply w-24 h-24;
+}

@@ -1,0 +1,30 @@
+.badge-primary {
+  @apply bg-primary3 text-primary;
+}
+.badge-success {
+  @apply bg-success3 text-white;
+}
+.badge-danger {
+  @apply bg-danger text-white;
+}
+.badge-outline-primary {
+  @apply text-primary border border-primary bg-white;
+}
+.badge-outline-success {
+  @apply text-success3 border border-success3 bg-white;
+}
+.badge-outline-danger {
+  @apply text-danger border border-danger bg-white;
+}
+.badge-sm {
+  @apply text-[10px] py-1 px-2 font-Poppins font-normal leading-none;
+}
+.badge-md {
+  @apply text-xs py-1 px-2 font-Poppins font-normal leading-none;
+}
+.badge-lg {
+  @apply text-sm py-1 px-2 font-Poppins font-normal leading-none;
+}
+.badge-xl {
+  @apply text-base py-1 px-2 font-Poppins font-normal leading-none;
+}
