@@ -1,7 +1,7 @@
 {
-  "name": "@wisnuvb/react-blog-ui",
-  "version": "0.0.1",
-  "description": "A simple react component for blog",
+  "name": "@wisnuvb/oriviu-ui",
+  "version": "0.0.2",
+  "description": "UI Component for Oriviu WebApps",
   "scripts": {
     "rollup:clean": "rm -Rf ./dist",
     "rollup:build": "rollup -c",
@@ -12,14 +12,15 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "start": "npm run storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "npm-publish": "npm publish --access public"
   },
   "author": "Wisnu Saputro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wisnuvb/react-blog-ui/issues"
+    "url": "https://github.com/wisnuvb/oriviu-ui/issues"
   },
-  "homepage": "https://github.com/wisnuvb/react-blog-ui",
+  "homepage": "https://github.com/wisnuvb/oriviu-ui",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
